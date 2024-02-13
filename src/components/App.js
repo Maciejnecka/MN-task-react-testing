@@ -1,7 +1,8 @@
 import React from 'react';
+import TableComponent from './Table';
 
 function App() {
-  return <h1>Hello world</h1>;
+  return <TableComponent />;
 }
 
 export default App;

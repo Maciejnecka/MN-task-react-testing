@@ -12,6 +12,10 @@ html{
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
 }
+
+body{
+  background: linear-gradient(145deg, #e6e9f0 0%, #ffffff 100%);
+}
 `;
 
 export default GlobalStyles;

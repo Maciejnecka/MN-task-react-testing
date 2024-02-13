@@ -1,0 +1,896 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Inception",
+      "director": "Christopher Nolan",
+      "genre": "Sci-Fi, Thriller",
+      "year": 2010,
+      "production": "USA",
+      "duration": 148
+    },
+    {
+      "id": 2,
+      "title": "The Shawshank Redemption",
+      "director": "Frank Darabont",
+      "genre": "Drama",
+      "year": 1994,
+      "production": "USA",
+      "duration": 142
+    },
+    {
+      "id": 3,
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "director": "Chris Columbus",
+      "genre": "Fantasy, Adventure",
+      "year": 2001,
+      "production": "United Kingdom, United States",
+      "duration": 152
+    },
+    {
+      "id": 4,
+      "title": "Harry Potter and the Chamber of Secrets",
+      "director": "Chris Columbus",
+      "genre": "Fantasy, Adventure",
+      "year": 2002,
+      "production": "United Kingdom, United States",
+      "duration": 161
+    },
+    {
+      "id": 5,
+      "title": "Harry Potter and the Prisoner of Azkaban",
+      "director": "Alfonso Cuarón",
+      "genre": "Fantasy, Adventure",
+      "year": 2004,
+      "production": "United Kingdom, United States",
+      "duration": 142
+    },
+    {
+      "id": 6,
+      "title": "Harry Potter and the Goblet of Fire",
+      "director": "Mike Newell",
+      "genre": "Fantasy, Adventure",
+      "year": 2005,
+      "production": "United Kingdom, United States",
+      "duration": 157
+    },
+    {
+      "id": 7,
+      "title": "Harry Potter and the Order of the Phoenix",
+      "director": "David Yates",
+      "genre": "Fantasy, Adventure",
+      "year": 2007,
+      "production": "United Kingdom, United States",
+      "duration": 138
+    },
+    {
+      "id": 8,
+      "title": "Harry Potter and the Half-Blood Prince",
+      "director": "David Yates",
+      "genre": "Fantasy, Adventure",
+      "year": 2009,
+      "production": "United Kingdom, United States",
+      "duration": 153
+    },
+    {
+      "id": 9,
+      "title": "Harry Potter and the Deathly Hallows - Part 1",
+      "director": "David Yates",
+      "genre": "Fantasy, Adventure",
+      "year": 2010,
+      "production": "United Kingdom, United States",
+      "duration": 146
+    },
+    {
+      "id": 10,
+      "title": "Harry Potter and the Deathly Hallows - Part 2",
+      "director": "David Yates",
+      "genre": "Fantasy, Adventure",
+      "year": 2011,
+      "production": "United Kingdom, United States",
+      "duration": 130
+    },
+    {
+      "id": 11,
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "director": "Peter Jackson",
+      "genre": "Fantasy, Adventure",
+      "year": 2001,
+      "production": "New Zealand, United States",
+      "duration": 178
+    },
+    {
+      "id": 12,
+      "title": "The Lord of the Rings: The Two Towers",
+      "director": "Peter Jackson",
+      "genre": "Fantasy, Adventure",
+      "year": 2002,
+      "production": "New Zealand, United States",
+      "duration": 179
+    },
+    {
+      "id": 13,
+      "title": "The Lord of the Rings: The Return of the King",
+      "director": "Peter Jackson",
+      "genre": "Fantasy, Adventure",
+      "year": 2003,
+      "production": "New Zealand, United States",
+      "duration": 201
+    },
+    {
+      "id": 14,
+      "title": "The Hobbit: An Unexpected Journey",
+      "director": "Peter Jackson",
+      "genre": "Fantasy, Adventure",
+      "year": 2012,
+      "production": "New Zealand, United States",
+      "duration": 169
+    },
+    {
+      "id": 15,
+      "title": "The Hobbit: The Desolation of Smaug",
+      "director": "Peter Jackson",
+      "genre": "Fantasy, Adventure",
+      "year": 2013,
+      "production": "New Zealand, United States",
+      "duration": 161
+    },
+    {
+      "id": 16,
+      "title": "The Hobbit: The Battle of the Five Armies",
+      "director": "Peter Jackson",
+      "genre": "Fantasy, Adventure",
+      "year": 2014,
+      "production": "New Zealand, United States",
+      "duration": 144
+    },
+    {
+      "id": 17,
+      "title": "Star Wars: Episode I - The Phantom Menace",
+      "director": "George Lucas",
+      "genre": "Action, Adventure, Fantasy",
+      "year": 1999,
+      "production": "United States",
+      "duration": 136
+    },
+    {
+      "id": 18,
+      "title": "Star Wars: Episode II - Attack of the Clones",
+      "director": "George Lucas",
+      "genre": "Action, Adventure, Fantasy",
+      "year": 2002,
+      "production": "United States",
+      "duration": 142
+    },
+    {
+      "id": 19,
+      "title": "Star Wars: Episode III - Revenge of the Sith",
+      "director": "George Lucas",
+      "genre": "Action, Adventure, Fantasy",
+      "year": 2005,
+      "production": "United States",
+      "duration": 140
+    },
+    {
+      "id": 20,
+      "title": "Star Wars: Episode IV - A New Hope",
+      "director": "George Lucas",
+      "genre": "Action, Adventure, Fantasy",
+      "year": 1977,
+      "production": "United States",
+      "duration": 121
+    },
+    {
+      "id": 21,
+      "title": "Star Wars: Episode V - The Empire Strikes Back",
+      "director": "Irvin Kershner",
+      "genre": "Action, Adventure, Fantasy",
+      "year": 1980,
+      "production": "United States",
+      "duration": 124
+    },
+    {
+      "id": 22,
+      "title": "Star Wars: Episode VI - Return of the Jedi",
+      "director": "Richard Marquand",
+      "genre": "Action, Adventure, Fantasy",
+      "year": 1983,
+      "production": "United States",
+      "duration": 131
+    },
+    {
+      "id": 23,
+      "title": "Star Wars: Episode VII - The Force Awakens",
+      "director": "J.J. Abrams",
+      "genre": "Action, Adventure, Fantasy",
+      "year": 2015,
+      "production": "United States",
+      "duration": 138
+    },
+    {
+      "id": 24,
+      "title": "Star Wars: Episode VIII - The Last Jedi",
+      "director": "Rian Johnson",
+      "genre": "Action, Adventure, Fantasy",
+      "year": 2017,
+      "production": "United States",
+      "duration": 152
+    },
+    {
+      "id": 25,
+      "title": "Star Wars: Episode IX - The Rise of Skywalker",
+      "director": "J.J. Abrams",
+      "genre": "Action, Adventure, Fantasy",
+      "year": 2019,
+      "production": "United States",
+      "duration": 142
+    },
+    {
+      "id": 26,
+      "title": "Shrek",
+      "director": "Andrew Adamson, Vicky Jenson",
+      "genre": "Animation, Adventure, Comedy",
+      "year": 2001,
+      "production": "United States",
+      "duration": 90
+    },
+    {
+      "id": 27,
+      "title": "Shrek 2",
+      "director": "Andrew Adamson, Kelly Asbury, Conrad Vernon",
+      "genre": "Animation, Adventure, Comedy",
+      "year": 2004,
+      "production": "United States",
+      "duration": 93
+    },
+    {
+      "id": 28,
+      "title": "Shrek the Third",
+      "director": "Chris Miller, Raman Hui",
+      "genre": "Animation, Adventure, Comedy",
+      "year": 2007,
+      "production": "United States",
+      "duration": 93
+    },
+    {
+      "id": 29,
+      "title": "Shrek Forever After",
+      "director": "Mike Mitchell",
+      "genre": "Animation, Adventure, Comedy",
+      "year": 2010,
+      "production": "United States",
+      "duration": 93
+    },
+    {
+      "id": 30,
+      "title": "Puss in Boots",
+      "director": "Chris Miller",
+      "genre": "Animation, Adventure, Comedy",
+      "year": 2011,
+      "production": "United States",
+      "duration": 90
+    },
+    {
+      "id": 31,
+      "title": "Edge of Tomorrow",
+      "director": "Doug Liman",
+      "genre": "Action, Sci-Fi",
+      "year": 2014,
+      "production": "United States",
+      "duration": 113
+    },
+    {
+      "id": 32,
+      "title": "Annihilation",
+      "director": "Alex Garland",
+      "genre": "Adventure, Drama, Horror",
+      "year": 2018,
+      "production": "United Kingdom",
+      "duration": 115
+    },
+    {
+      "id": 33,
+      "title": "Grave Encounters",
+      "director": "The Vicious Brothers",
+      "genre": "Horror",
+      "year": 2011,
+      "production": "Canada",
+      "duration": 92
+    },
+    {
+      "id": 34,
+      "title": "Pulp Fiction",
+      "director": "Quentin Tarantino",
+      "genre": "Crime, Drama",
+      "year": 1994,
+      "production": "United States",
+      "duration": 154
+    },
+    {
+      "id": 35,
+      "title": "Forrest Gump",
+      "director": "Robert Zemeckis",
+      "genre": "Drama, Romance",
+      "year": 1994,
+      "production": "United States",
+      "duration": 142
+    },
+    {
+      "id": 36,
+      "title": "Saving Private Ryan",
+      "director": "Steven Spielberg",
+      "genre": "Drama, War",
+      "year": 1998,
+      "production": "United States",
+      "duration": 169
+    },
+
+    {
+      "id": 37,
+      "title": "Blade Runner 2049",
+      "director": "Denis Villeneuve",
+      "genre": "Sci-Fi, Drama",
+      "year": 2017,
+      "production": "USA",
+      "duration": 164
+    },
+    {
+      "id": 38,
+      "title": "Ex Machina",
+      "director": "Alex Garland",
+      "genre": "Sci-Fi, Thriller",
+      "year": 2014,
+      "production": "UK",
+      "duration": 108
+    },
+    {
+      "id": 39,
+      "title": "Return to the Planet of the Apes",
+      "director": "Ava DuVernay",
+      "genre": "Sci-Fi, Adventure",
+      "year": 2024,
+      "production": "USA",
+      "duration": 142
+    },
+    {
+      "id": 40,
+      "title": "The Matrix",
+      "director": "Lana Wachowski, Lilly Wachowski",
+      "genre": "Action, Sci-Fi",
+      "year": 1999,
+      "production": "United States",
+      "duration": 136
+    },
+    {
+      "id": 41,
+      "title": "The Matrix Reloaded",
+      "director": "Lana Wachowski, Lilly Wachowski",
+      "genre": "Action, Sci-Fi",
+      "year": 2003,
+      "production": "United States",
+      "duration": 138
+    },
+    {
+      "id": 42,
+      "title": "The Matrix Revolutions",
+      "director": "Lana Wachowski, Lilly Wachowski",
+      "genre": "Action, Sci-Fi",
+      "year": 2003,
+      "production": "United States",
+      "duration": 129
+    },
+    {
+      "id": 43,
+      "title": "The Matrix Resurrections",
+      "director": "Lana Wachowski",
+      "genre": "Action, Sci-Fi",
+      "year": 2021,
+      "production": "United States",
+      "duration": 148
+    },
+    {
+      "id": 44,
+      "title": "Interstellar",
+      "director": "Christopher Nolan",
+      "genre": "Adventure, Drama, Sci-Fi",
+      "year": 2014,
+      "production": "United States, United Kingdom",
+      "duration": 169
+    },
+    {
+      "id": 45,
+      "title": "The Fifth Element",
+      "director": "Luc Besson",
+      "genre": "Sci-Fi, Adventure",
+      "year": 1997,
+      "production": "France",
+      "duration": 126
+    },
+    {
+      "id": 46,
+      "title": "Blue Is the Warmest Color",
+      "director": "Abdellatif Kechiche",
+      "genre": "Romance, Drama",
+      "year": 2013,
+      "production": "France",
+      "duration": 180
+    },
+    {
+      "id": 47,
+      "title": "Isle of Dogs",
+      "director": "Wes Anderson",
+      "genre": "Animation, Adventure",
+      "year": 2018,
+      "production": "Germany, USA",
+      "duration": 101
+    },
+    {
+      "id": 48,
+      "title": "The Grandmaster",
+      "director": "Wong Kar-wai",
+      "genre": "Biography, Drama, Martial Arts",
+      "year": 2013,
+      "production": "Hong Kong, China",
+      "duration": 130
+    },
+    {
+      "id": 49,
+      "title": "La La Land",
+      "director": "Damien Chazelle",
+      "genre": "Comedy, Drama, Music",
+      "year": 2016,
+      "production": "United States",
+      "duration": 128
+    },
+    {
+      "id": 50,
+      "title": "The Theory of Everything",
+      "director": "James Marsh",
+      "genre": "Biography, Drama, Romance",
+      "year": 2014,
+      "production": "UK",
+      "duration": 123
+    },
+    {
+      "id": 51,
+      "title": "127 Hours",
+      "director": "Danny Boyle",
+      "genre": "Biography, Drama",
+      "year": 2010,
+      "production": "UK, USA",
+      "duration": 94
+    },
+    {
+      "id": 52,
+      "title": "Contact",
+      "director": "Robert Zemeckis",
+      "genre": "Sci-Fi, Drama",
+      "year": 1997,
+      "production": "USA",
+      "duration": 150
+    },
+    {
+      "id": 53,
+      "title": "Whiplash",
+      "director": "Damien Chazelle",
+      "genre": "Drama, Music",
+      "year": 2014,
+      "production": "USA",
+      "duration": 107
+    },
+    {
+      "id": 55,
+      "title": "Inglourious Basterds",
+      "director": "Quentin Tarantino",
+      "genre": "Adventure, Drama, War",
+      "year": 2009,
+      "production": "Germany, United States",
+      "duration": 153
+    },
+    {
+      "id": 56,
+      "title": "Fargo",
+      "director": "Joel Coen, Ethan Coen",
+      "genre": "Crime, Drama",
+      "year": 1996,
+      "production": "USA",
+      "duration": 98
+    },
+    {
+      "id": 57,
+      "title": "There Will Be Blood",
+      "director": "Paul Thomas Anderson",
+      "genre": "Drama, History",
+      "year": 2007,
+      "production": "United States",
+      "duration": 158
+    },
+    {
+      "id": 58,
+      "title": "The Dark Knight",
+      "director": "Christopher Nolan",
+      "genre": "Action, Crime, Drama",
+      "year": 2008,
+      "production": "United States, United Kingdom",
+      "duration": 152
+    },
+    {
+      "id": 59,
+      "title": "Avatar",
+      "director": "James Cameron",
+      "genre": "Action, Adventure, Fantasy",
+      "year": 2009,
+      "production": "United States",
+      "duration": 162
+    },
+    {
+      "id": 60,
+      "title": "The Social Network",
+      "director": "David Fincher",
+      "genre": "Biography, Drama",
+      "year": 2010,
+      "production": "United States",
+      "duration": 120
+    },
+    {
+      "id": 61,
+      "title": "Toy Story 3",
+      "director": "Lee Unkrich",
+      "genre": "Animation, Adventure, Comedy",
+      "year": 2010,
+      "production": "United States",
+      "duration": 103
+    },
+    {
+      "id": 62,
+      "title": "The Wolf of Wall Street",
+      "director": "Martin Scorsese",
+      "genre": "Biography, Crime, Drama",
+      "year": 2013,
+      "production": "United States",
+      "duration": 180
+    },
+    {
+      "id": 63,
+      "title": "Her",
+      "director": "Spike Jonze",
+      "genre": "Drama, Romance, Sci-Fi",
+      "year": 2013,
+      "production": "United States",
+      "duration": 126
+    },
+    {
+      "id": 64,
+      "title": "Gravity",
+      "director": "Alfonso Cuarón",
+      "genre": "Drama, Sci-Fi, Thriller",
+      "year": 2013,
+      "production": "United Kingdom, United States",
+      "duration": 91
+    },
+    {
+      "id": 65,
+      "title": "Birdman",
+      "director": "Alejandro G. Iñárritu",
+      "genre": "Comedy, Drama",
+      "year": 2014,
+      "production": "United States",
+      "duration": 119
+    },
+    {
+      "id": 66,
+      "title": "The Lobster",
+      "director": "Yorgos Lanthimos",
+      "genre": "Comedy, Drama, Romance",
+      "year": 2015,
+      "production": "Ireland, UK, Greece, France, Netherlands, USA",
+      "duration": 119
+    },
+    {
+      "id": 67,
+      "title": "Spotlight",
+      "director": "Tom McCarthy",
+      "genre": "Biography, Crime, Drama",
+      "year": 2015,
+      "production": "United States",
+      "duration": 129
+    },
+    {
+      "id": 68,
+      "title": "Mad Max: Fury Road",
+      "director": "George Miller",
+      "genre": "Action, Adventure, Sci-Fi",
+      "year": 2015,
+      "production": "Australia, United States",
+      "duration": 120
+    },
+    {
+      "id": 69,
+      "title": "Moonlight",
+      "director": "Barry Jenkins",
+      "genre": "Drama",
+      "year": 2016,
+      "production": "United States",
+      "duration": 111
+    },
+    {
+      "id": 70,
+      "title": "The Grand Budapest Hotel",
+      "director": "Wes Anderson",
+      "genre": "Comedy, Drama",
+      "year": 2014,
+      "production": "Germany, USA",
+      "duration": 99
+    },
+    {
+      "id": 71,
+      "title": "Get Out",
+      "director": "Jordan Peele",
+      "genre": "Horror, Mystery, Thriller",
+      "year": 2017,
+      "production": "United States",
+      "duration": 104
+    },
+    {
+      "id": 72,
+      "title": "Dunkirk",
+      "director": "Christopher Nolan",
+      "genre": "Action, Drama, History",
+      "year": 2017,
+      "production": "Netherlands, United Kingdom, France, United States",
+      "duration": 106
+    },
+    {
+      "id": 73,
+      "title": "The Shape of Water",
+      "director": "Guillermo del Toro",
+      "genre": "Adventure, Drama, Fantasy",
+      "year": 2017,
+      "production": "United States",
+      "duration": 123
+    },
+    {
+      "id": 74,
+      "title": "Call Me by Your Name",
+      "director": "Luca Guadagnino",
+      "genre": "Drama, Romance",
+      "year": 2017,
+      "production": "Italy, France, Brazil, United States",
+      "duration": 132
+    },
+    {
+      "id": 75,
+      "title": "Eternal Sunshine of the Spotless Mind",
+      "director": "Michel Gondry",
+      "genre": "Drama, Romance, Sci-Fi",
+      "year": 2004,
+      "production": "United States",
+      "duration": 108
+    },
+    {
+      "id": 76,
+      "title": "The Prestige",
+      "director": "Christopher Nolan",
+      "genre": "Drama, Mystery, Sci-Fi",
+      "year": 2006,
+      "production": "United States, United Kingdom",
+      "duration": 130
+    },
+    {
+      "id": 77,
+      "title": "Amélie",
+      "director": "Jean-Pierre Jeunet",
+      "genre": "Comedy, Romance",
+      "year": 2001,
+      "production": "France",
+      "duration": 122
+    },
+    {
+      "id": 78,
+      "title": "Pan's Labyrinth",
+      "director": "Guillermo del Toro",
+      "genre": "Drama, Fantasy, War",
+      "year": 2006,
+      "production": "Spain, Mexico",
+      "duration": 118
+    },
+    {
+      "id": 79,
+      "title": "Gladiator",
+      "director": "Ridley Scott",
+      "genre": "Action, Adventure, Drama",
+      "year": 2000,
+      "production": "United States, United Kingdom",
+      "duration": 155
+    },
+    {
+      "id": 80,
+      "title": "Black Swan",
+      "director": "Darren Aronofsky",
+      "genre": "Drama, Thriller",
+      "year": 2010,
+      "production": "United States",
+      "duration": 108
+    },
+    {
+      "id": 81,
+      "title": "Memento",
+      "director": "Christopher Nolan",
+      "genre": "Mystery, Thriller",
+      "year": 2000,
+      "production": "United States",
+      "duration": 113
+    },
+    {
+      "id": 82,
+      "title": "The Big Lebowski",
+      "director": "Joel Coen, Ethan Coen",
+      "genre": "Comedy, Crime",
+      "year": 1998,
+      "production": "United States",
+      "duration": 117
+    },
+    {
+      "id": 83,
+      "title": "Oldboy",
+      "director": "Park Chan-wook",
+      "genre": "Action, Drama, Mystery",
+      "year": 2003,
+      "production": "South Korea",
+      "duration": 120
+    },
+    {
+      "id": 84,
+      "title": "The Godfather",
+      "director": "Francis Ford Coppola",
+      "genre": "Crime, Drama",
+      "year": 1972,
+      "production": "United States",
+      "duration": 175
+    },
+    {
+      "id": 85,
+      "title": "The Godfather: Part II",
+      "director": "Francis Ford Coppola",
+      "genre": "Crime, Drama",
+      "year": 1974,
+      "production": "United States",
+      "duration": 202
+    },
+    {
+      "id": 86,
+      "title": "The Silence of the Lambs",
+      "director": "Jonathan Demme",
+      "genre": "Crime, Drama, Thriller",
+      "year": 1991,
+      "production": "United States",
+      "duration": 118
+    },
+    {
+      "id": 87,
+      "title": "Fight Club",
+      "director": "David Fincher",
+      "genre": "Drama",
+      "year": 1999,
+      "production": "Germany, United States",
+      "duration": 139
+    },
+    {
+      "id": 88,
+      "title": "Se7en",
+      "director": "David Fincher",
+      "genre": "Crime, Drama, Mystery",
+      "year": 1995,
+      "production": "United States",
+      "duration": 127
+    },
+    {
+      "id": 89,
+      "title": "The Truman Show",
+      "director": "Peter Weir",
+      "genre": "Comedy, Drama, Sci-Fi",
+      "year": 1998,
+      "production": "United States",
+      "duration": 103
+    },
+    {
+      "id": 90,
+      "title": "Arrival",
+      "director": "Denis Villeneuve",
+      "genre": "Sci-Fi, Drama",
+      "year": 2016,
+      "production": "USA",
+      "duration": 116
+    },
+    {
+      "id": 91,
+      "title": "Goodfellas",
+      "director": "Martin Scorsese",
+      "genre": "Biography, Crime, Drama",
+      "year": 1990,
+      "production": "United States",
+      "duration": 146
+    },
+    {
+      "id": 92,
+      "title": "City of God",
+      "director": "Fernando Meirelles, Kátia Lund",
+      "genre": "Crime, Drama",
+      "year": 2002,
+      "production": "Brazil, France",
+      "duration": 130
+    },
+    {
+      "id": 93,
+      "title": "Spirited Away",
+      "director": "Hayao Miyazaki",
+      "genre": "Animation, Adventure, Family",
+      "year": 2001,
+      "production": "Japan",
+      "duration": 125
+    },
+    {
+      "id": 94,
+      "title": "The Revenant",
+      "director": "Alejandro González Iñárritu",
+      "genre": "Adventure, Drama",
+      "year": 2015,
+      "production": "USA",
+      "duration": 156
+    },
+    {
+      "id": 95,
+      "title": "Schindler's List",
+      "director": "Steven Spielberg",
+      "genre": "Biography, Drama, History",
+      "year": 1993,
+      "production": "United States",
+      "duration": 195
+    },
+    {
+      "id": 96,
+      "title": "The Departed",
+      "director": "Martin Scorsese",
+      "genre": "Crime, Drama, Thriller",
+      "year": 2006,
+      "production": "United States, Hong Kong",
+      "duration": 151
+    },
+    {
+      "id": 97,
+      "title": "The Pianist",
+      "director": "Roman Polanski",
+      "genre": "Biography, Drama, Music",
+      "year": 2002,
+      "production": "France, Poland, Germany, United Kingdom",
+      "duration": 150
+    },
+    {
+      "id": 98,
+      "title": "The Green Mile",
+      "director": "Frank Darabont",
+      "genre": "Crime, Drama, Fantasy",
+      "year": 1999,
+      "production": "United States",
+      "duration": 189
+    },
+    {
+      "id": 99,
+      "title": "No Country for Old Men",
+      "director": "Joel Coen, Ethan Coen",
+      "genre": "Crime, Drama",
+      "year": 2007,
+      "production": "USA",
+      "duration": 122
+    },
+    {
+      "id": 100,
+      "title": "American Beauty",
+      "director": "Sam Mendes",
+      "genre": "Drama",
+      "year": 1999,
+      "production": "United States",
+      "duration": 122
+    }
+  ]
+}

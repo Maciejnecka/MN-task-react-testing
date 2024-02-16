@@ -11,8 +11,11 @@ export const Table = styled.table`
   border-radius: 8px;
   overflow: hidden;
   background: linear-gradient(145deg, #e6e9f0 0%, #eef1f5 100%);
+  .th-id {
+    width: 6%;
+  }
   .th-title {
-    width: 30%;
+    width: 25%;
   }
   .th-director {
     width: 15%;
@@ -21,19 +24,26 @@ export const Table = styled.table`
     width: 15%;
   }
   .th-year {
-    width: 5%;
+    width: 7%;
   }
   .th-production {
-    width: 20%;
+    width: 15%;
   }
   .th-duration {
-    width: 8%;
+    width: 10%;
   }
 `;
 
 export const TableHead = styled.thead`
   background-color: #007bff;
   color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+
+  .TableHeader__sort-icon {
+    font-size: 1.4rem;
+    text-align: center;
+  }
 `;
 
 export const TableRow = styled.tr`

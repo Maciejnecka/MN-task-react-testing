@@ -6,6 +6,7 @@ import {
   TableRow,
   TableHeader,
   TableCell,
+  FilterInput,
 } from './Table.styled.js';
 import TablePagination from '../TablePagination';
 import TableRows from '../TableRows';
@@ -79,7 +80,7 @@ const TableComponent = () => {
 
   return (
     <div className="table-component">
-      <input
+      <FilterInput
         type="text"
         value={filterText}
         onChange={(e) => setFilterText(e.target.value)}

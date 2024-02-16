@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import moviesData from '../../db';
 import {
   Table,
@@ -7,6 +7,8 @@ import {
   TableHeader,
   TableCell,
 } from './Table.styled.js';
+import TablePagination from '../TablePagination';
+import TableRows from '../TableRows';
 
 const TableComponent = () => {
   const [currentPage, setCurrentPage] = useState(0);
@@ -14,6 +16,10 @@ const TableComponent = () => {
   const [filterText, setFilterText] = useState('');
   const [sortColumn, setSortColumn] = useState('title');
   const [sortDirection, setSortDirection] = useState('asc');
+
+  useEffect(() => {
+    setCurrentPage(0);
+  }, [filterText]);
 
   const handleSort = (columnName) => {
     if (sortColumn === columnName) {
@@ -55,16 +61,21 @@ const TableComponent = () => {
     (currentPage + 1) * rowsPerPage
   );
 
+  const totalPages = Math.ceil(filteredMovies.length / rowsPerPage);
+
   return (
-    <div>
+    <div className="table-component">
       <input
         type="text"
         value={filterText}
         onChange={(e) => setFilterText(e.target.value)}
         placeholder="Filter movies..."
+        className="table-component__filter-input"
       />
-      <div>Found {filteredMovies.length} movies</div>
-      <Table>
+      <div className="table-component__movies-count">
+        Found {filteredMovies.length} movies
+      </div>
+      <Table className="table-component__table">
         <TableHead>
           <TableRow>
             {[
@@ -78,7 +89,7 @@ const TableComponent = () => {
             ].map((columnName) => (
               <TableHeader
                 key={columnName}
-                className={`th-${columnName}`}
+                className={`table-component__header table-component__header--${columnName}`}
                 onClick={() => handleSort(columnName)}
               >
                 {columnName.charAt(0).toUpperCase() + columnName.slice(1)}
@@ -89,51 +100,43 @@ const TableComponent = () => {
         </TableHead>
         <tbody>
           {displayedMovies.map((movie) => (
-            <TableRow key={movie.id}>
-              <TableCell>{movie.id}</TableCell>
-              <TableCell>{movie.title}</TableCell>
-              <TableCell>{movie.director}</TableCell>
-              <TableCell>{movie.genre}</TableCell>
-              <TableCell>{movie.year}</TableCell>
-              <TableCell>{movie.production}</TableCell>
-              <TableCell>{movie.duration} min</TableCell>
+            <TableRow key={movie.id} className="table-component__row">
+              <TableCell className="table-component__cell">
+                {movie.id}
+              </TableCell>
+              <TableCell className="table-component__cell">
+                {movie.title}
+              </TableCell>
+              <TableCell className="table-component__cell">
+                {movie.director}
+              </TableCell>
+              <TableCell className="table-component__cell">
+                {movie.genre}
+              </TableCell>
+              <TableCell className="table-component__cell">
+                {movie.year}
+              </TableCell>
+              <TableCell className="table-component__cell">
+                {movie.production}
+              </TableCell>
+              <TableCell className="table-component__cell">
+                {movie.duration} min
+              </TableCell>
             </TableRow>
           ))}
         </tbody>
       </Table>
-      <div>
-        <button
-          disabled={currentPage === 0}
-          onClick={() => setCurrentPage(currentPage - 1)}
-        >
-          Previous
-        </button>
-        <button
-          disabled={(currentPage + 1) * rowsPerPage >= moviesData.movies.length}
-          onClick={() => setCurrentPage(currentPage + 1)}
-        >
-          Next
-        </button>
-      </div>
-      <div>
-        <label htmlFor="rowsPerPage">Rows per page:</label>
-        <select
-          id="rowsPerPage"
-          value={rowsPerPage}
-          onChange={(e) => {
-            const newRowsPerPage = parseInt(e.target.value, 10);
-            const firstRowIndex = currentPage * rowsPerPage;
-            const newCurrentPage = Math.floor(firstRowIndex / newRowsPerPage);
-            setRowsPerPage(newRowsPerPage);
-            setCurrentPage(newCurrentPage);
-          }}
-        >
-          <option value="5">5</option>
-          <option value="10">10</option>
-          <option value="15">15</option>
-          <option value="20">20</option>
-        </select>
-      </div>
+      <TablePagination
+        currentPage={currentPage}
+        totalPages={totalPages}
+        setCurrentPage={setCurrentPage}
+      />
+      <TableRows
+        rowsPerPage={rowsPerPage}
+        setRowsPerPage={setRowsPerPage}
+        setCurrentPage={setCurrentPage}
+        currentPage={currentPage}
+      />
     </div>
   );
 };

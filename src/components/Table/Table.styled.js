@@ -11,27 +11,6 @@ export const Table = styled.table`
   border-radius: 8px;
   overflow: hidden;
   background: linear-gradient(145deg, #e6e9f0 0%, #eef1f5 100%);
-  .th-id {
-    width: 6%;
-  }
-  .th-title {
-    width: 25%;
-  }
-  .th-director {
-    width: 15%;
-  }
-  .th-genre {
-    width: 15%;
-  }
-  .th-year {
-    width: 7%;
-  }
-  .th-production {
-    width: 15%;
-  }
-  .th-duration {
-    width: 10%;
-  }
 `;
 
 export const TableHead = styled.thead`

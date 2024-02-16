@@ -63,6 +63,20 @@ const TableComponent = () => {
 
   const totalPages = Math.ceil(filteredMovies.length / rowsPerPage);
 
+  const columns = [
+    { key: 'id', label: 'No.' },
+    { key: 'title', label: 'Title' },
+    { key: 'director', label: 'Director' },
+    { key: 'genre', label: 'Genre' },
+    { key: 'year', label: 'Year' },
+    { key: 'production', label: 'Production' },
+    {
+      key: 'duration',
+      label: 'Duration',
+      formatter: (value) => `${value} min`,
+    },
+  ];
+
   return (
     <div className="table-component">
       <input
@@ -78,50 +92,22 @@ const TableComponent = () => {
       <Table className="table-component__table">
         <TableHead>
           <TableRow>
-            {[
-              'id',
-              'title',
-              'director',
-              'genre',
-              'year',
-              'production',
-              'duration',
-            ].map((columnName) => (
-              <TableHeader
-                key={columnName}
-                className={`table-component__header table-component__header--${columnName}`}
-                onClick={() => handleSort(columnName)}
-              >
-                {columnName.charAt(0).toUpperCase() + columnName.slice(1)}
-                {getSortIcon(columnName)}
+            {columns.map(({ key, label }) => (
+              <TableHeader key={key} onClick={() => handleSort(key)}>
+                {label}
+                {getSortIcon(key)}
               </TableHeader>
             ))}
           </TableRow>
         </TableHead>
         <tbody>
           {displayedMovies.map((movie) => (
-            <TableRow key={movie.id} className="table-component__row">
-              <TableCell className="table-component__cell">
-                {movie.id}
-              </TableCell>
-              <TableCell className="table-component__cell">
-                {movie.title}
-              </TableCell>
-              <TableCell className="table-component__cell">
-                {movie.director}
-              </TableCell>
-              <TableCell className="table-component__cell">
-                {movie.genre}
-              </TableCell>
-              <TableCell className="table-component__cell">
-                {movie.year}
-              </TableCell>
-              <TableCell className="table-component__cell">
-                {movie.production}
-              </TableCell>
-              <TableCell className="table-component__cell">
-                {movie.duration} min
-              </TableCell>
+            <TableRow key={movie.id}>
+              {columns.map(({ key, formatter }) => (
+                <TableCell key={key}>
+                  {formatter ? formatter(movie[key]) : movie[key]}
+                </TableCell>
+              ))}
             </TableRow>
           ))}
         </tbody>

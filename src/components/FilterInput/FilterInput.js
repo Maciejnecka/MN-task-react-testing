@@ -1,14 +1,22 @@
 import React from 'react';
-import StyledFilterInput from './FilterInput.styled';
+import {
+  FilterInputContainer,
+  StyledFilterInput,
+  ClearButton,
+} from './FilterInput.styled';
 
 const FilterInput = ({ filterText, setFilterText }) => {
+  const clearInput = () => setFilterText('');
   return (
-    <StyledFilterInput
-      text="text"
-      value={filterText}
-      onChange={(e) => setFilterText(e.target.value)}
-      placeholder="Filter movies..."
-    />
+    <FilterInputContainer>
+      <StyledFilterInput
+        text="text"
+        value={filterText}
+        onChange={(e) => setFilterText(e.target.value)}
+        placeholder="Filter movies..."
+      />
+      <ClearButton onClick={clearInput}>Clear input</ClearButton>
+    </FilterInputContainer>
   );
 };
 

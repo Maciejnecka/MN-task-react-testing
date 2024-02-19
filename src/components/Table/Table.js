@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import moviesData from '../../db';
 import {
-  Table,
+  StyledTable,
   TableHead,
   TableRow,
   TableHeader,
   TableCell,
-  FilterInput,
+  MoviesCount,
 } from './Table.styled.js';
 import TablePagination from '../TablePagination';
 import TableRows from '../TableRows';
+import FilterInput from '../FilterInput';
 
 const TableComponent = () => {
   const [currentPage, setCurrentPage] = useState(0);
@@ -37,7 +38,7 @@ const TableComponent = () => {
     if (sortColumn === columnName) {
       icon = sortDirection === 'asc' ? ' ↓' : ' ↑';
     }
-    return icon ? <span className="TableHeader__sort-icon">{icon}</span> : null;
+    return icon ? <span className="Tableheader__sort-icon">{icon}</span> : null;
   };
 
   const filteredMovies = moviesData.movies
@@ -80,17 +81,9 @@ const TableComponent = () => {
 
   return (
     <div className="table-component">
-      <FilterInput
-        type="text"
-        value={filterText}
-        onChange={(e) => setFilterText(e.target.value)}
-        placeholder="Filter movies..."
-        className="table-component__filter-input"
-      />
-      <div className="table-component__movies-count">
-        Found {filteredMovies.length} movies
-      </div>
-      <Table className="table-component__table">
+      <FilterInput filterText={filterText} setFilterText={setFilterText} />
+      <MoviesCount>Found {filteredMovies.length} movies</MoviesCount>
+      <StyledTable className="table-component__table">
         <TableHead>
           <TableRow>
             {columns.map(({ key, label }) => (
@@ -112,7 +105,7 @@ const TableComponent = () => {
             </TableRow>
           ))}
         </tbody>
-      </Table>
+      </StyledTable>
       <TablePagination
         currentPage={currentPage}
         totalPages={totalPages}

@@ -5,7 +5,7 @@ const StyledTableRows = styled.div`
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   padding: 20px;
 
   .table-component__rows-label {
@@ -25,13 +25,14 @@ const StyledTableRows = styled.div`
     transition: background-color 0.3s, color 0.3s;
 
     &:hover {
-      background-color: #0052cc;
+      background-image: linear-gradient(135deg, #0052cc, #6e48aa);
+
       color: white;
     }
 
     &:disabled,
     &.table-component__rows-button--active {
-      background-color: #0052cc;
+      background-image: linear-gradient(135deg, #0052cc, #6e48aa);
       color: white;
       cursor: default;
     }

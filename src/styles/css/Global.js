@@ -15,7 +15,7 @@ html{
 
 body{
   background: linear-gradient(145deg, #e6e9f0 0%, #ffffff 100%);
-  height: 100vh;
+  height: 200vh;
 }
 `;
 

@@ -1,6 +1,21 @@
 import styled, { css } from 'styled-components';
 
-export const Table = styled.table`
+export const MoviesCount = styled.div`
+  text-align: center;
+  width: max-content;
+  padding: 8px 16px;
+  border-radius: 20px;
+  margin: 20px auto;
+  color: #ffffff;
+  font-weight: bold;
+  border: 1px solid transparent;
+  background-image: linear-gradient(135deg, #0052cc, #6e48aa);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+`;
+
+export const StyledTable = styled.table`
   width: 100%;
   max-width: 1400px;
   border-collapse: separate;
@@ -13,26 +28,31 @@ export const Table = styled.table`
 `;
 
 export const TableHead = styled.thead`
-  background-color: #0052cc;
+  background-image: linear-gradient(135deg, #0052cc, #6e48aa);
   color: #ffffff;
   font-size: 1rem;
   cursor: pointer;
-
-  .TableHeader__sort-icon {
-    margin-left: 5px;
-    font-size: 0.8rem;
-  }
 `;
 
 export const TableRow = styled.tr`
-  height: 60px;
+  height: 120px;
+  overflow: hidden;
   transition: all 0.3s ease-in;
   &:nth-child(even) {
     background-color: #f8f9fa;
   }
 
   &:hover {
-    background-color: rgba(0, 82, 204, 0.05);
+    background-color: rgba(0, 82, 204, 0.15);
+  }
+
+  td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .Tableheader__sort-icon {
+    font-size: 1.2rem;
   }
 `;
 
@@ -41,9 +61,16 @@ export const TableHeader = styled.th`
   text-align: left;
   font-weight: bold;
   position: sticky;
+  width: 5%;
   top: 0;
   z-index: 10;
   box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1);
+  &:first-child {
+    width: 1%;
+  }
+  &:last-child {
+    width: 1%;
+  }
 
   ${(props) =>
     props.sortable &&
@@ -70,21 +97,5 @@ export const TableCell = styled.td`
 export const TBody = styled.tbody`
   tr:last-child td {
     border-bottom: none;
-  }
-`;
-
-export const FilterInput = styled.input`
-  font-size: 1rem;
-  padding: 10px;
-  margin: 20px 0;
-  border-radius: 5px;
-  border: 1px solid #cccccc;
-  width: 100%;
-  max-width: 300px;
-  box-sizing: border-box;
-  display: block;
-  &:focus {
-    border-color: #0052cc;
-    outline: none;
   }
 `;

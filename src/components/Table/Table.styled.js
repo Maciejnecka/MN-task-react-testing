@@ -16,7 +16,7 @@ export const MoviesCount = styled.div`
 `;
 
 export const StyledTable = styled.table`
-  width: 100%;
+  width: 90%;
   max-width: 1400px;
   border-collapse: separate;
   border-spacing: 0;
@@ -35,7 +35,7 @@ export const TableHead = styled.thead`
 `;
 
 export const TableRow = styled.tr`
-  height: 120px;
+  height: 100px;
   overflow: hidden;
   transition: all 0.3s ease-in;
   &:nth-child(even) {

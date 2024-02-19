@@ -21,7 +21,7 @@ const TablePagination = ({ currentPage, totalPages, setCurrentPage }) => {
           </button>
         )}
         {currentPage > 2 && (
-          <span className="table-component__ellipsis">...</span>
+          <span className="table-component__ellipsis">..</span>
         )}
         {currentPage > 0 && (
           <button
